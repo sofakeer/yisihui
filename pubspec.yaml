@@ -1,0 +1,133 @@
+name: yisihui
+description: "易思汇 - 留学缴费汇款APP"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # 状态管理
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # 路由管理
+  go_router: ^14.0.2
+
+  # 网络请求
+  dio: ^5.4.0
+  retrofit: ^4.0.3
+  json_annotation: ^4.8.1
+
+  # 本地存储
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+
+  # UI和主题
+  dynamic_color: ^1.7.0
+  cached_network_image: ^3.3.0
+  flutter_cache_manager: ^3.3.1
+
+  # 安全
+  crypto: ^3.0.3
+  encrypt: ^5.0.1
+  local_auth: ^2.1.6
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.9
+  firebase_analytics: ^10.7.4
+  firebase_crashlytics: ^3.4.9
+  firebase_performance: ^0.9.3
+
+  # 通知
+  flutter_local_notifications: ^17.1.2
+  web_socket_channel: ^2.4.0
+
+  # 工具
+  connectivity_plus: ^5.0.2
+  device_info_plus: ^9.1.0
+  permission_handler: ^11.0.1
+  package_info_plus: ^6.0.0
+  geolocator: ^10.1.0
+  intl: ^0.19.0
+
+  # 日志和调试
+  logger: ^2.0.2
+  talker_flutter: ^4.4.0
+
+  # 性能优化
+  flutter_native_splash: ^2.3.7
+  visibility_detector: ^0.4.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # 代码生成
+  riverpod_generator: ^2.3.9
+  retrofit_generator: ^8.0.4
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+
+  # 代码规范
+  flutter_lints: ^4.0.0
+  very_good_analysis: ^5.1.0
+
+  # 调试工具 (仅debug模式)
+  alice: ^0.4.2
+
+  # 其他工具
+  flutter_launcher_icons: ^0.13.1
+  flutter_oss_licenses: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  
+  # 资源文件
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/data/
+  
+  # 国际化配置
+  generate: true
+
+  # 自定义字体
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700
+
+# 国际化配置
+flutter_intl:
+  enabled: true
+  arb_dir: lib/app/l10n
+  output_dir: lib/app/l10n/generated
+
+# 启动页配置
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash_logo.png
+  color_dark: "#000000"
+  image_dark: assets/images/splash_logo_dark.png
+
+# 图标配置
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21
