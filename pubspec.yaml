@@ -57,7 +57,7 @@ dependencies:
   device_info_plus: ^9.1.0
   permission_handler: ^11.0.1
   package_info_plus: ^6.0.0
-  geolocator: ^10.1.0
+  # geolocator: ^10.1.0
   intl: ^0.19.0
 
   # 日志和调试
